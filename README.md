@@ -1,16 +1,96 @@
-# React + Vite
+# Dek-D FrontEnd
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mockup web application for managing Dek-D novel bookmarks, built with React, Vite and TailwindCSS
 
-Currently, two official plugins are available:
+## 📋 Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before you begin, ensure you have the following installed:
 
-## React Compiler
+- **Node.js** version 18.0.0 or higher
+- **npm** or **yarn** for package management
+- **Git** for cloning the repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Check Versions
 
-## Expanding the ESLint configuration
+```bash
+node --version
+npm --version
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/Dek-D-FrontEnd.git
+cd Dek-D-FrontEnd
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+Or if using yarn:
+
+```bash
+yarn install
+```
+
+## 🤔❓ How to Run
+
+### Run in Development Mode
+
+```bash
+npm run dev
+```
+
+Or
+
+```bash
+yarn dev
+```
+
+After running the command, open your browser and navigate to `http://localhost:5173`
+
+## 🎯 Features
+
+### ✨ Main Features
+
+- **📚 Bookmark Management** - Add and delete novel bookmarks
+- **🖼️ Banner Carousel** - Swipe novel cover images
+- **📖 Novel Cards** - Display novels with author, chapter, and last updated time
+- **➕ Create New Bookmark** - Add new bookmarks through a Popup Modal
+- **✏️ Delete Bookmarks** - Select and Delete multiple bookmarks
+- **📱 Responsive Design** - Supports all device sizes (Mobile, Tablet, Desktop)
+
+### 🛠️ Technologies Used
+
+- **React 19.2.0** - UI library
+- **Vite 7.2.4** - Build tool and development server
+- **Tailwind CSS 4.1.18** - Utility-first CSS framework
+- **React Icons 5.5.0** - Icon library
+
+## 📁 Project Structure
+
+```
+Dek-D-FrontEnd/
+├── public/
+│   └── images/          # Novel cover images
+├── src/
+│   ├── components/      # React Components
+│   │   ├── Banner.jsx
+│   │   ├── CreateNovelPopup.jsx
+│   │   └── NovelCard.jsx
+│   ├── pages/           # Page components
+│   │   └── DekDNovelsPage.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+└── vite.config.js
+```
+
+---
+
+Made with ❤️ using React + Vite
