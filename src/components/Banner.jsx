@@ -82,7 +82,7 @@ const Banner = ({ banners }) => {
           {banners.map((banner, index) => (
             <div
               key={index}
-              className="relative flex-shrink-0 h-[250px] sm:h-[350px] lg:h-[270px] flex items-center"
+              className="relative shrink-0 h-[200px] sm:h-[280px] md:h-[320px] lg:h-[270px] flex items-center"
             >
               <img
                 src={banner.image}
